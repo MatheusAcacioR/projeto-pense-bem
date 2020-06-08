@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de pense bem</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body onload="iniciar()">
+    
+    <div id="conteudo">
+        <h1 id="titulo">
+            Pense Bem
+        </h1>
+        <form action="">
+            <p>
+                <input type="text" id="visor1" value="*" readonly>
+            </p>
+            <p>
+                <input type="text" id="visor2" readonly>
+            </p>
+            <p>
+                <input type="button" id="botaoA" value="A" onclick="jogar(this.value)">
+                <input type="button" id="botaoB" value="B" onclick="jogar(this.value)">
+                <input type="button" id="botaoC" value="C" onclick="jogar(this.value)">
+                <input type="button" id="botaoD" value="D" onclick="jogar(this.value)">
+            </p>
+            <p>
+                <input id="reiniciar" type="button" value="Reiniciar Jogo" onclick="iniciar()">
+            </p>
+        </form>
+    </div>
+
+    <script src="funcoes.js"></script>
+</body>
+</html>
